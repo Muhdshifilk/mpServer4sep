@@ -1,7 +1,5 @@
-//importing json-server
 const jsonServer = require('json-server')
 
-//creating server
 const mpServer = jsonServer.create()
 
 //initializing middleware
@@ -16,9 +14,9 @@ mpServer.use(router)
 
 //setting port
 
-const PORT = 2000 || process.env.PORT
+const PORT = 3000 || process.env.PORT
 
-//calling listen method with server server for activating server
+//calling listen method with server for activating server
 mpServer.listen(PORT,()=>{
     console.log("Server running at PORT:"+PORT);
     
